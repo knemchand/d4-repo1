@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print Job ID
-      run: echo "Job ID ${{ github.run_id }}_${{ github.job }}"
+      run: echo "Workflow ${{ GITHUB_RUN_ID }}_${{ GITHUB_WORKFLOW }}"
