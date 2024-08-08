@@ -10,5 +10,5 @@ jobs:
     - name: Print Workflow Name
       run: echo "Workflow Name - ${{ github.workflow }}"
         
-    - name: Print Workflow Run ID
-      run: echo "Workflow Run ID - ${{ github.run_id }}"
+    - name: Print Workflow Run Number
+      run: echo "Workflow Run Number - ${{ github.run_number }}"
