@@ -4,14 +4,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  Build:
-    runs-on: ubuntu:latest
-    steps:
-      #run: echo "Job ID: ${{ github.run_id }}" 
-
-    jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Job ID
-        run: echo "Job ID: ${{ github.run_id }}_${{ github.job }}"
+    - name: Print Job ID
+      run: echo "Job ID ${{ github.run_id }}_${{ github.job }}"
